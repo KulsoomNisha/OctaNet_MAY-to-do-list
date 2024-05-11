@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="list.css">
+    
+  </head>
+  <body>
+    <div class="header">
+      <h3 style="margin-bottom:10px">Hello,&nbsp; <u onclick="updatename()" id="username" style="cursor: pointer;">Guest</u></h3>
+      <h2 style="margin:10px">To-Do List</h2>
+      <input type="text" id="writespace" placeholder="Write down a task to do...">
+      <button class="addBtn" id="btn" onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="list">
+      
+    </ul>
+
+    <!-- Added 10 lines of buttons for writing to-do list items -->
+    <div>
+      <input type="text" id="task1" placeholder=  "1.">
+      <br>
+      <input type="text" id="task2" placeholder="2.">
+      <br>
+      <input type="text" id="task3" placeholder="3.">
+      <br>
+      <input type="text" id="task4" placeholder="4.">
+      <br>
+      <input type="text" id="task5" placeholder="5.">
+      <br>
+      <input type="text" id="task6" placeholder="6.">
+      <br>
+      <input type="text" id="task7" placeholder="7.">
+      <br>
+      <input type="text" id="task8" placeholder="8.">
+      <br>
+      <input type="text" id="task9" placeholder="9.">
+      <br>
+      <input type="text" id="task10" placeholder="10.">
+      <br>
+    </div>
+
+    <center>
+      <button type="button" id="clear-list" onclick="removeAllTasks()">Clear List</button>
+    </center>
+    <div class="push"></div>
+<!-- 
+    <script type="text/javascript" src="list.js">
+      // Function to add a task to the list
+function addTask() {
+  // Get the input value
+  var taskInput = document.getElementById("writespace").value;
+
+  // Find the first empty input field among task1 to task10
+  for (var i = 1; i <= 10; i++) {
+      var taskField = document.getElementById("task" + i);
+      if (taskField.value === "") {
+          taskField.value = taskInput;
+          break;
+      }
+  }
+
+  // Clear the input field after adding the task
+  document.getElementById("writespace").value = "";
+}
+
+    </script> -->
+  </body>
+</html>
+
+
+
+
